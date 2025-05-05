@@ -9,7 +9,7 @@ fi
 # Check for a remote
 if ! git remote | grep -q origin; then
   echo "❌ No remote 'origin' found. Add one with:"
-  echo "   git remote add origin https://github.com/your-username/your-repo.git"
+  echo "   git remote add origin https://github.com/i-Stefanov/Moving-App.git"
   exit 1
 fi
 
