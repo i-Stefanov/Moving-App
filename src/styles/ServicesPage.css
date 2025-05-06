@@ -1,0 +1,49 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 100%;
+  padding: 2em 4em;
+  gap: 2em;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("../assets/ServicesBGPattern.png");
+  background-repeat: repeat;
+  background-size: contain;
+  background-color: #f8f9f8;
+}
+
+.services-header {
+  text-align: center;
+}
+
+.services-header h1 {
+  margin-bottom: 1em;
+}
+
+.services-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 3em;
+}
+
+.service-card {
+  max-width: 20em;
+  padding: 2em;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card h3 {
+  margin-bottom: 2em;
+}
+
+.service-icon {
+  font-size: 5rem;
+  align-self: center;
+  margin-bottom: 0.2em;
+}
