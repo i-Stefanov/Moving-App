@@ -1,3 +1,52 @@
 .header {
-  border: 3px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff;
+  font-size: 1.2rem;
+  height: 10vh;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.nav {
+  display: flex;
+  gap: 1.2rem;
+  height: inherit;
+  align-items: center;
+}
+
+.nav a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+  font-weight: 600;
+  padding: 0 0.5rem;
+  height: 80%;
+  text-decoration: none;
+  color: #274a10d8;
+  transition: color 200ms ease-out, transform 200ms ease-out;
+}
+
+.nav a:hover {
+  color: #274a10;
+  transform: scale(1.1);
+}
+
+.nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0.3em;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #274a10;
+  transition: width 200ms ease;
+}
+
+.nav a:hover::after {
+  width: 100%;
 }

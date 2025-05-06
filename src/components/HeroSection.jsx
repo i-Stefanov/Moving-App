@@ -7,7 +7,7 @@ function HeroSection() {
         <h1>Преместването е лесно с нас</h1>
         <p>Надеждни хамалски услуги за домове и офиси</p>
         <a href="/quote" className="cta-button">
-          Заяви оферта
+          Получи оферта
         </a>
       </div>
     </section>
