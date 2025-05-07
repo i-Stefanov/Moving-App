@@ -7,11 +7,8 @@ import ServicesPage from "./ServicesPage";
 function Home() {
   return (
     <>
-      <Header />
       <HeroSection />
-      {/* <ServiceOverview /> */}
       <ServicesPage />
-      {/* <Footer />  */}
     </>
   );
 }
