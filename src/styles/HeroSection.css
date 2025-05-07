@@ -10,6 +10,7 @@
 
 .hero-content {
   display: flex;
+  position: relative;
   gap: 4em;
   flex-direction: column;
 }
@@ -31,16 +32,18 @@
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.hero-content a {
+.hero-content .cta-button {
   display: inline-flex;
   width: fit-content;
+  position: absolute;
+  bottom: 13em;
+  right: 4em;
   align-items: center;
   align-self: flex-end;
   justify-content: center;
   text-decoration: none;
   font-size: 1.3em;
   font-weight: 600;
-  margin-top: 3em;
   color: #ffffff;
   padding: 0.65em 1.3em;
   background: #da9f15;

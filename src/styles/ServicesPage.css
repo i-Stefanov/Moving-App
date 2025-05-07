@@ -1,6 +1,7 @@
 .services {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   border: none;
   flex-basis: 100%;
@@ -22,18 +23,20 @@
 
 .services-header h1 {
   margin-bottom: 1em;
+  font-size: 3em;
 }
 
 .services-grid {
   display: flex;
-  justify-content: space-between;
-  /* gap: 3em; */
+  gap: 3em;
 }
 
 .service-card {
-  max-width: 20em;
-  padding: 4em;
+  max-width: 32%;
+  min-width: 15em;
+  padding: 2em;
   display: flex;
+  flex: 1 1 30%;
   flex-direction: column;
   justify-content: space-between;
   border: none;
@@ -58,12 +61,17 @@
 }
 
 .service-card h3 {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+  font-size: 1.8em;
   text-align: center;
 }
 
+.service-card p {
+  font-size: 1.4em;
+}
+
 .service-icon {
-  font-size: 5rem;
+  font-size: 7rem;
   align-self: center;
   margin-bottom: 0.2em;
 }

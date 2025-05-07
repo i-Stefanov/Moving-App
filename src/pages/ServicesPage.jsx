@@ -8,7 +8,7 @@ function ServicesPage() {
     <section className="services">
       <div className="services-header">
         <h1>Нашите услуги</h1>
-        <p>Професионални хамалски услуги за дома и офиса.</p>
+        <p>Надеждни и професионални решения за преместване на дома и офиса.</p>
       </div>
       <div className="services-grid">
         <div className="service-card">
