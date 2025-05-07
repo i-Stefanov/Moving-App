@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/ServicesPage.css";
 
 import { FaHome, FaBuilding, FaBoxOpen } from "react-icons/fa";
@@ -14,16 +15,25 @@ function ServicesPage() {
           <FaHome className="service-icon home-icon" />
           <h3>Домашно преместване</h3>
           <p>Без стрес при преместване на апартамент или къща.</p>
+          <Link to={"/quote"} className="card-cta">
+            Получи оферта
+          </Link>
         </div>
         <div className="service-card">
           <FaBuilding className="service-icon building-icon" />
           <h3>Офис преместване</h3>
           <p>Ефективно преместване на вашия бизнес с минимално прекъсване.</p>
+          <Link to={"/quote"} className="card-cta">
+            Получи оферта
+          </Link>
         </div>
         <div className="service-card">
           <FaBoxOpen className="service-icon box-icon" />
           <h3>Опаковане и разопаковане</h3>
           <p>Професионално опаковане на ценни и чупливи вещи.</p>
+          <Link to={"/quote"} className="card-cta">
+            Получи оферта
+          </Link>
         </div>
       </div>
     </section>
