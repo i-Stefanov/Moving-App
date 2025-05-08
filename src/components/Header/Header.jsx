@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import "../styles/Header.css";
+import styles from "./Header.module.css";
 
 function Header() {
   return (
-    <header className="header">
+    <header className={styles.header}>
       <div className="logo">ЕВРО ХАМАЛИ</div>
-      <nav className="nav">
+      <nav className={styles.nav}>
         <Link to="/">Начало</Link>
         <Link to="/quote">Запитване</Link>
         <Link to="/services">Услуги</Link>

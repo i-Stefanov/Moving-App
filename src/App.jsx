@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
-import ServicesPage from "./pages/ServicesPage.jsx";
-import Header from "./components/Header.jsx";
-import Footer from "./components/Footer.jsx";
+import ServicesPage from "./pages/ServicesPage/ServicesPage.jsx";
+import Header from "./components/Header/Header.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 // import Quote from "./pages/Quote";
 // import ThankYou from "./pages/ThankYou";
 

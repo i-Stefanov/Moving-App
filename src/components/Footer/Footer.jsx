@@ -1,8 +1,8 @@
-import "../styles/Footer.css";
+import styles from "./Footer.module.css";
 
 function Footer() {
   return (
-    <footer className="footer" id="contact">
+    <footer className={styles.footer} id="contact">
       <p>
         &copy; 2025 ЕВРО ХАМАЛИ |<span> contact@evrohamali.bg </span>
       </p>

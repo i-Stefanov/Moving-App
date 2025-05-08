@@ -2,27 +2,27 @@
   display: flex;
   justify-content: center;
   background: linear-gradient(rgba(24, 32, 20, 0.6), rgba(24, 32, 20, 0.6)),
-    url("../assets/Hero.png") center center / cover no-repeat;
+    url("../../assets/Hero.png") center center / cover no-repeat;
   height: 90vh;
   color: #f1f1eb;
   padding: 0 10em;
 }
 
-.hero-content {
+.heroContent {
   display: flex;
   position: relative;
   gap: 4em;
   flex-direction: column;
 }
 
-.hero-content h1 {
+.heroContent h1 {
   font-size: 4.5em;
   margin-top: 1em;
   font-weight: 600;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.hero-content p {
+.heroContent p {
   font-size: 1.35em;
   max-width: 40ch;
   font-weight: 400;
@@ -32,7 +32,7 @@
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.hero-content .cta-button {
+.ctaButton {
   display: inline-flex;
   width: fit-content;
   position: absolute;
@@ -53,7 +53,7 @@
     box-shadow 200ms ease-out;
 }
 
-.hero-content a:hover {
+.ctaButton:hover {
   background-color: #cc981e;
   transform: scale(1.2);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
