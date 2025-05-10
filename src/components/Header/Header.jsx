@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 function Header() {
   return (
     <header className={styles.header}>
-      <div className="logo">ЕВРО ХАМАЛИ</div>
+      <div className="logo">ЛОГО</div>
       <nav className={styles.nav}>
         <Link to="/">Начало</Link>
         <Link to="/quote">Запитване</Link>
