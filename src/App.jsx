@@ -3,21 +3,22 @@ import Home from "./pages/Home.jsx";
 import ServicesPage from "./pages/ServicesPage/ServicesPage.jsx";
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
-// import Quote from "./pages/Quote";
-// import ThankYou from "./pages/ThankYou";
+import QuoteForm from "./components/QuoteForm/QuoteForm.jsx";
 
 function App() {
   return (
     <div className="app">
       <Router>
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<ServicesPage />} />
+        <main className="app-main">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<ServicesPage />} />
 
-          {/* <Route path="/quote" element={<Quote />} /> */}
-          {/* <Route path="/thank-you" element={<ThankYou />} /> */}
-        </Routes>
+            <Route path="/quote" element={<QuoteForm />} />
+            {/* <Route path="/thank-you" element={<ThankYou />} /> */}
+          </Routes>
+        </main>
         <Footer />
       </Router>
     </div>
