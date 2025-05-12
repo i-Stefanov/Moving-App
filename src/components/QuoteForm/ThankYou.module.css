@@ -1,0 +1,89 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.thankYouContainer {
+  animation: fadeIn 0.6s ease-in;
+  max-width: 600px;
+  margin: 4rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.thankYouContainer h2 {
+  color: #2f4f4f;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.thankYouContainer p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.emailLink {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #eab231;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.emailLink:hover {
+  color: #cc981e;
+}
+
+.backButton {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #eab231;
+  color: #fff;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.backButton:hover {
+  background-color: #cc981e;
+}
+
+.successIcon {
+  margin-bottom: 1rem;
+  stroke: #4caf50;
+  animation: popIn 0.6s ease-in-out;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
