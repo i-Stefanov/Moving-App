@@ -1,3 +1,6 @@
+import { db } from "../../firebase";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+
 import { useQuoteForm } from "./QuoteFormProvider";
 import styles from "./ContactForm/ContactForm.module.css"; // reuse existing styles
 import { useForm } from "react-hook-form";
@@ -11,9 +14,22 @@ function ReviewForm() {
     },
   });
 
-  const handleFinalSubmit = (data) => {
-    setFormData({ ...formData, additionalNotes: data.additionalNotes });
-    next(); // this would be the final step like ThankYou or summary submit
+  const handleFinalSubmit = async (data) => {
+    const completeData = {
+      ...formData,
+      additionalNotes: data.additionalNotes,
+      createdAt: serverTimestamp(),
+    };
+
+    try {
+      await addDoc(collection(db, "quotes"), completeData);
+      setFormData(completeData); // Update the context with the complete data
+      console.log("Document written with ID: ", completeData.id);
+      next(); // go to the Thank You screen
+    } catch (error) {
+      console.error("Error saving to Firestore:", error);
+      alert("Грешка при запис. Опитайте отново.");
+    }
   };
 
   return (
