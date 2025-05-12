@@ -14,7 +14,6 @@ export function QuoteFormProvider({ children }) {
     name: "",
     email: "",
     phone: "",
-    // Add more fields as needed later
   });
 
   // Advance to the next step and update data
