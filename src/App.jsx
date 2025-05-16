@@ -4,6 +4,7 @@ import ServicesPage from "./pages/ServicesPage/ServicesPage.jsx";
 import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import QuoteForm from "./components/QuoteForm/QuoteForm.jsx";
+import Dashboard from "./pages/Dashboard/Dashboard.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/services" element={<ServicesPage />} />
 
             <Route path="/quote" element={<QuoteForm />} />
+            <Route path="dashboard" element={<Dashboard />} />
             {/* <Route path="/thank-you" element={<ThankYou />} /> */}
           </Routes>
         </main>
