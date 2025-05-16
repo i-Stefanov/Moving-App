@@ -1,3 +1,16 @@
+:root {
+  --primary-green: #4e8076;
+  --primary-blue: #3a6ea5;
+  --primary-orange: #d97b59;
+  --primary-yellow: #b79f3f;
+  --primary-grey: #f8f9f8;
+  --white: #fff;
+  --text-dark: #222;
+  --shadow-blue: rgba(58, 110, 165, 0.12);
+  --shadow-orange: rgba(230, 126, 34, 0.13);
+  --shadow-green: rgba(78, 128, 118, 0.13);
+}
+
 .services {
   display: flex;
   flex-direction: column;
@@ -8,13 +21,13 @@
   padding: 2em;
   gap: 2em;
   background-image: linear-gradient(
-      rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0.9)
+      rgba(255, 255, 255, 0.92),
+      rgba(255, 255, 255, 0.92)
     ),
     url("../../assets/ServicesBGPattern.png");
   background-repeat: repeat;
   background-size: contain;
-  background-color: #f8f9f8;
+  background-color: var(--primary-grey);
 }
 
 .servicesHeader {
@@ -28,13 +41,15 @@
 
 .servicesGrid {
   display: flex;
-  gap: 3em;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .serviceCard {
-  max-width: 32%;
-  min-width: 15em;
-  padding: 2em;
+  max-width: 20%;
+  min-width: 22rem;
+  font-size: 0.8rem;
+  padding: 2rem 3.5rem;
   display: flex;
   flex: 1 1 30%;
   flex-direction: column;
@@ -46,18 +61,18 @@
 }
 
 .serviceCard:nth-child(1) {
-  background-color: #6c9a8b;
-  color: #fff;
+  background-color: var(--primary-green);
+  color: var(--white);
 }
 
 .serviceCard:nth-child(2) {
-  background-color: #5b8db3;
-  color: #fff;
+  background-color: var(--primary-blue);
+  color: var(--white);
 }
 
 .serviceCard:nth-child(3) {
-  background-color: #d97b59;
-  color: #fff;
+  background-color: var(--primary-orange);
+  color: var(--white);
 }
 
 .serviceCard h3 {
@@ -68,24 +83,73 @@
 
 .serviceCard p {
   font-size: 1.4em;
+  text-align: center;
 }
 
 .serviceIcon {
-  font-size: 7rem;
+  font-size: 5rem;
   align-self: center;
   margin-bottom: 0.2em;
 }
 
 .cardCta {
   text-decoration: none;
-  color: white;
+  color: var(--white);
   align-self: center;
+  font-size: 1.1rem;
   margin-top: 2em;
-  background-color: #5b8db3;
-  padding: 1em 2em;
-  font-weight: 500;
+  background: linear-gradient(
+    90deg,
+    var(--primary-blue) 0%,
+    var(--primary-green) 100%
+  );
+  padding: 1em 2.5em;
+  font-weight: 600;
+  outline: 2px solid var(--primary-blue);
+  outline-offset: 2px;
+  box-shadow: 0 2px 8px rgba(91, 141, 179, 0.15);
+  letter-spacing: 0.5px;
+  border: none;
+  cursor: pointer;
+  transition: color 200ms ease-out, background 200ms ease-out,
+    letter-spacing 200ms ease-out, box-shadow 200ms ease-out,
+    transform 100ms ease-out;
+}
+
+.cardCta:hover {
+  background: linear-gradient(90deg, #fe936b 0%, #ffb88c 100%);
+  color: #fff;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 16px rgba(217, 123, 89, 0.18);
+  transform: translateY(-2px) scale(1.03);
 }
 
 .serviceCard:nth-child(2) .cardCta {
-  background: #d97b59;
+  background: linear-gradient(90deg, #d97b59 0%, #ffb88c 100%);
+  color: #fff;
+  outline: 2px solid #d97b59;
+}
+
+.serviceCard:nth-child(1) .cardCta {
+  background: linear-gradient(90deg, #ffb347 0%, #ff7746 100%);
+  color: #fff;
+  outline: 2px solid #d97b59;
+  box-shadow: 0 2px 8px rgba(217, 123, 89, 0.15);
+}
+
+.serviceCard:nth-child(2) .cardCta:hover {
+  background: linear-gradient(90deg, #fe936b 0%, #ffb88c 100%);
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.serviceCard:nth-child(3) .cardCta {
+  background: linear-gradient(
+    90deg,
+    var(--primary-orange) 0%,
+    var(--primary-yellow) 100%
+  );
+  color: var(--white);
+  outline: 2px solid var(--primary-blue);
+  box-shadow: 0 2px 8px var(--shadow-orange);
 }
