@@ -17,8 +17,7 @@ function App() {
             <Route path="/services" element={<ServicesPage />} />
 
             <Route path="/quote" element={<QuoteForm />} />
-            <Route path="dashboard" element={<Dashboard />} />
-            {/* <Route path="/thank-you" element={<ThankYou />} /> */}
+            <Route path="/admin" element={<Dashboard />} />
           </Routes>
         </main>
         <Footer />
