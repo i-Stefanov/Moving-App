@@ -10,6 +10,7 @@ function Header() {
         <Link to="/quote">Запитване</Link>
         <Link to="/services">Услуги</Link>
         <Link to="/contact">Контакт</Link>
+        <Link to="/dashboard">Админ панел</Link>
       </nav>
     </header>
   );
